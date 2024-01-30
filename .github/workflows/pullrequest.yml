@@ -58,7 +58,13 @@ jobs:
         with:
           name: ExportedArmTemplate # (5) Artifact name 
 
+      
+      - name: Update Az module
+        run: |
+          pwsh -Command 'Update-Module Az -WhatIf'
+          pwsh -Command 'Update-Module Az'
 
+          
       - name: Login via Az module
         uses: azure/login@v1
         with:
