@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "details_copy__4.txt",
+				"fileName": "details__copy_4.txt",
+
 				"folderPath": "Output",
 				"container": "adfdemo2"
 			}
